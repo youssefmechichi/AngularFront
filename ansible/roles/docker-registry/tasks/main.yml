@@ -1,0 +1,9 @@
+---
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: youssefmechichi
+    password: 181JMT2801
+    
+- name: Push the Docker image into the repo
+  shell: docker push youssefmechichi/FrontAngular:latest
