@@ -12,7 +12,7 @@
 - name: run container docker 
   docker_container:
     name: myapp_container
-    image: youssefmechichi/FrontAngular:latest
+    image: youssefmechichi/frontangular:latest
     state: started
     recreate: true
     ports:

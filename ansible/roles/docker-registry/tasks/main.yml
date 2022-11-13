@@ -6,4 +6,4 @@
     password: 181JMT2801
     
 - name: Push the Docker image into the repo
-  shell: docker push youssefmechichi/FrontAngular:latest
+  shell: docker push youssefmechichi/frontangular:latest
