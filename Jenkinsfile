@@ -19,7 +19,7 @@ pipeline
 		}
 	    }
         }
-	stage('docker'){
+	stage('Docker'){
             steps{
                 script{
                     sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml -e ansible_become_password=181JMT2801"
@@ -27,7 +27,7 @@ pipeline
             }
         }
         
-         stage('docker-registry'){
+         stage('Docker-Registry'){
             steps{
                 script{
                     sh "ansible-playbook ansible/docker-registry.yml -i ansible/inventory/host.yml -e ansible_become_password=181JMT2801"
